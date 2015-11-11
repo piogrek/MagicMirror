@@ -1,0 +1,12 @@
+{
+    "name": "root/magic-mirror",
+    "authors": [
+        {
+            "name": "Peter Grochowski",
+            "email": "piogrek@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^1.1"
+    }
+}
