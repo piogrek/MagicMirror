@@ -1,2 +1,5 @@
 /vendor/
 js/config.js
+.idea
+googlekeys.json
+config.php
