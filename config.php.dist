@@ -1,2 +1,2 @@
 <?php
-define("CAL_ID", 'piogrek@gmail.com');
+define("CAL_ID", '');
