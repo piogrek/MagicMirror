@@ -31,7 +31,7 @@
         <div class="col-sm-4">
             <hr>
             <a class="twitter-timeline" href="https://twitter.com/piogrek/lists/news"
-               data-tweet-limit="4"
+               data-tweet-limit="6"
                data-chrome="noheader nofooter noborders transparent"
                data-widget-id="664738826351484928">Tweets from https://twitter.com/piogrek/lists/news</a>
             <script>!function (d, s, id) {
@@ -50,7 +50,7 @@
             <a class="twitter-timeline"
                href="https://twitter.com/WOWFactsOfLife"
                data-chrome="noheader nofooter noborders transparent"
-               data-tweet-limit="4"
+               data-tweet-limit="6"
                data-widget-id="664568482944692224"></a>
             <script>!function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
