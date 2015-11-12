@@ -17,17 +17,6 @@ body, html {
 
 }
 
-.top
-{
-	position: absolute;
-	top: 50px;
-}
-
-.left
-{
-	position: absolute;
-	left: 50px;
-}
 .right
 {
 	position: absolute;

@@ -131,8 +131,8 @@ calendar.init = function () {
     //    this.updateCalendar(this.eventList)
     //}.bind(this), this.updateInterval);
     //
-    //this.dataIntervalId = setInterval(function () {
-    //    this.updateData(this.updateCalendar.bind(this));
-    //}.bind(this), this.updateDataInterval);
+    this.dataIntervalId = setInterval(function () {
+        this.updateData(this.updateCalendar.bind(this));
+    }.bind(this), this.updateDataInterval);
 
 }

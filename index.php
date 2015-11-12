@@ -1,10 +1,9 @@
 <html>
 <head>
     <title>Magic Mirror</title>
-    <style type="text/css">
-        <?php include('css/main.css') ?>
-    </style>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/weather-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript">
         var gitHash = '<?php echo trim(`git rev-parse HEAD`) ?>';
     </script>
@@ -12,40 +11,65 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 </head>
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="date small dimmed"></div>
+            <div class="time"></div>
+            <div class="calendar xxsmall"></div>
+        </div>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <div class="windsun small dimmed"></div>
+                    <div class="temp"></div>
+                    <div class="forecast small dimmed"></div>
+                </div>
+            </div>
+        </div>
 
-<div class="top left">
-    <div class="date small dimmed"></div>
-    <div class="time"></div>
-    <div class="calendar xxsmall"></div>
-</div>
-<div class="top right">
-    <div class="windsun small dimmed"></div>
-    <div class="temp"></div>
-    <div class="forecast small dimmed"></div>
-<br><br>
-    <a class="twitter-timeline"
-       href="https://twitter.com/WOWFactsOfLife"
-       data-chrome="noheader nofooter noborders transparent"
-       data-tweet-limit="3"
-       data-widget-id="664568482944692224"></a>
-    <script>!function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, "script", "twitter-wjs");</script>
+        <div class="col-sm-4">
+            <hr>
+            <a class="twitter-timeline" href="https://twitter.com/piogrek/lists/news"
+               data-tweet-limit="4"
+               data-chrome="noheader nofooter noborders transparent"
+               data-widget-id="664738826351484928">Tweets from https://twitter.com/piogrek/lists/news</a>
+            <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");</script>
 
-</div>
-<div class="center-ver center-hor"><!-- <div class="dishwasher light">Vaatwasser is klaar!</div> --></div>
-<div class="lower-third center-hor">
-    <div class="compliment light">
+        </div>
+        <div class="col-sm-4">
+<hr>
+            <a class="twitter-timeline"
+               href="https://twitter.com/WOWFactsOfLife"
+               data-chrome="noheader nofooter noborders transparent"
+               data-tweet-limit="4"
+               data-widget-id="664568482944692224"></a>
+            <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");</script>
+        </div>
     </div>
+
 </div>
+
+
+<div class="center-ver center-hor"><!-- <div class="dishwasher light">Vaatwasser is klaar!</div> --></div>
+
 <div class="bottom center-hor">
-    <div class="news medium"></div>
 </div>
 
 </div>
@@ -61,7 +85,7 @@
 <script src="js/compliments/compliments.js" type="text/javascript"></script>
 <script src="js/weather/weather.js" type="text/javascript"></script>
 <script src="js/time/time.js" type="text/javascript"></script>
-<script src="js/news/news.js" type="text/javascript"></script>
+<!--<script src="js/news/news.js" type="text/javascript"></script>-->
 <script src="js/main.js?nocache=<?php echo md5(microtime()) ?>"></script>
 <!-- <script src="js/socket.io.min.js"></script> -->
 
