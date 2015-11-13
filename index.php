@@ -14,15 +14,19 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-4">
-            <div class="date small dimmed"></div>
-            <div class="time"></div>
             <div class="calendar xxsmall"></div>
         </div>
         <div class="col-sm-8">
             <div class="row">
-                <div class="col-sm-12 text-right">
+                <div class="col-sm-5 text-center">
+            <div class="date small dimmed"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="col-sm-4 text-center">
                     <div class="windsun small dimmed"></div>
                     <div class="temp"></div>
+                </div>
+                <div class="col-sm-3 text-right">
                     <div class="forecast small dimmed"></div>
                 </div>
             </div>
@@ -46,12 +50,12 @@
 
         </div>
         <div class="col-sm-4">
-<hr>
+            <hr>
             <a class="twitter-timeline"
                href="https://twitter.com/WOWFactsOfLife"
                data-chrome="noheader nofooter noborders transparent"
                data-tweet-limit="6"
-               data-widget-id="664568482944692224"></a>
+               data-widget-id="664959064531693569"></a>
             <script>!function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
                     if (!d.getElementById(id)) {
@@ -63,7 +67,6 @@
                 }(document, "script", "twitter-wjs");</script>
         </div>
     </div>
-
 </div>
 
 

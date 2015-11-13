@@ -116,7 +116,7 @@ calendar.updateCalendar = function (eventList) {
         row.append($('<td>').html(event.start).addClass('days dimmed'));
         table.append(row);
 
-        opacity -= 1 / eventList.length;
+        opacity -= 1 / eventList.length / 2;
     });
     $(this.calendarLocation).html(table.outerHTML());
     //$(this.calendarLocation).updateWithText(table, this.fadeInterval);
